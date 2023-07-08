@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LightsOut NYC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+  <script src = "https://kit.fontawesome.com/4d460528ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <input type = "checkbox" id = "check">
+          <label for = "check" class="checkbtn">
+              <i class = "fa-solid fa-bars"></i>
+          </label>
+          <label class = "logo">LightsOut</label>
+          <ul>
+            <li><a href = "#">Contact Us</a></li>
+          </ul>
+        </nav>
+    </header>
+<main>
+    <section>
+     <div class="welcome">
+        <h1>Welcome to the best high school party in NYC</h1>
+        <button><a href="#flex-container">See info</a></button>
+     </div>
+    </section>
+    <section id="flex-container">
+
+      <div class="flex-item-1">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80">
+        <div class="centered">
+            <h2>Venue</h2>
+            <p>Insert venue address</p>
+        </div>
+      </div>
+
+      <div class="flex-item-2">
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80">
+        <div class="centered">
+            <h2>Prices</h2>
+            <p>Door Payment: $20</p>
+        </div>
+      </div>
+
+      <div class="flex-item-3">
+        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80">
+        <div class="centered">
+            <h2>Date</h2>
+            <p>July 21, 2023</p>
+        </div>
+      </div>
+
+      <div class="flex-item-4">
+        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80">
+        <div class="centered">
+            <h2>Time</h2>
+            <p>8:00PM-12:00AM</p>
+        </div>
+      </div>
+
+    </section>
+</main>
+</body>
+</html>
+<style>
+  * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        background-color: white;
+        text-decoration: none;
+    }
+
+    nav {
+        background: lightcoral;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+
+    label.logo {
+        background-color: lightcoral;
+        color: black;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        background-color: lightcoral;
+        float: right;
+        margin-right: 2rem;
+    }
+
+    nav ul li {
+        background-color: lightcoral;
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 0.4rem;
+        font-size: 1.25rem;
+        padding: 0rem 1.25rem;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 1rem;
+    }
+
+    nav ul li a {
+        background-color: black;
+        color: white;
+        font: 17px;
+        transition: all 0.3s;
+        
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: lightcoral;
+        float:right;
+        line-height:80px;
+        margin-right:40px;
+        cursor: pointer;
+        display:none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
+
+    .welcome {
+        text-align: center;
+        margin: 5rem 10rem 4rem 10rem;
+        font-size: 1.5rem;
+    }
+
+    .welcome button {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border: 1px solid lightcoral;
+        background-color: lightcoral;
+        color: black;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+
+    .welcome button a {
+        background-color: lightcoral;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    #flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0rem 5rem 5rem 5rem;
+        flex-wrap: wrap;
+    }
+
+    .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4 {
+        position: relative;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .flex-item-1 img, .flex-item-2 img, .flex-item-3 img, .flex-item-4 img {
+        width: 30rem;
+        height: 20rem;
+        border-radius: 1rem;
+        opacity: 0.6;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+    }
+
+    .centered h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        label.logo {
+            font-size: 30px;
+            padding-left:30px;
+        }
+        
+        nav ul li a {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .checkbtn {
+            display: block;
+            background-color: lightcoral;
+        }
+        .welcome {
+            margin: 2rem;
+        }
+
+        header {
+            width: 100%;
+        }
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: lightcoral;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 10;
+        }
+
+        #flex-container {
+            margin: 2rem 0.5rem 2rem 0.5rem;
+        }
+
+        .flex-item-1 img, .flex-item-2 img, .flex-item-3 img, .flex-item-4 img {
+        width: 25rem;
+        height: 15rem;
+        border-radius: 1rem;
+        opacity: 0.6;
+    }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+            background-color: lightcoral;
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+        }
+
+        nav ul li a {
+            font-size: 1.5rem;
+            background-color: lightcoral;
+            color: white;
+        }
+        #check:checked ~ ul {
+            left: 0;
+            
+        }
+    }
+
+    @media only screen and (max-width: 397px) {
+        label.logo {
+            font-size: 25px;
+        }
+    }
+</style>
